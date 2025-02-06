@@ -28,6 +28,8 @@ ZITADEL_BASE_URL=http://localhost:8080
 ZITADEL_ADMIN_TOKEN=your-admin-token
 ```
 
+> you will need to create a service user with high permissions to generate an admin token
+
 ## Usage
 
 The CLI provides several commands for interacting with ZITADEL:
