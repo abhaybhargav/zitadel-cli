@@ -129,7 +129,7 @@ def create_app(name: str):
 @click.option('--roles', required=True, help='Comma-separated list of roles')
 def create_service_user(username: str, roles: str):
     """Create a service user with specified roles"""
-    api = ZitadelAPI(url, token)
+    api = ZitadelAPI(ZITADEL_BASE_URL, ZITADEL_ADMIN_TOKEN)
     role_list = [r.strip() for r in roles.split(',')]
     
     try:
